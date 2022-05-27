@@ -1,0 +1,99 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: sans-serif;
+	min-height: 100vh;
+}
+
+/* Top Container */
+.top-container {
+	width: 100%;
+	max-width: 1000px;
+	height: 20vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: lightcyan;
+}
+
+h1 {
+	font-size: 3em;
+	margin-bottom: 15px;
+}
+
+form {
+	display: flex;
+	width: 50%;
+	min-width: 500px;
+}
+
+#form-text {
+	width: 70%;
+	padding: .5em 1em;
+	font-size: 1.25em;
+	border: none;
+}
+
+#form-submit-btn {
+	width: 30%;
+	font-size: 1.25em;
+	font-weight: bold;
+	border: none;
+	background-color: dodgerblue;
+	color: white;
+	transition: all .25s;
+}
+
+#form-submit-btn:hover {
+	background-color: rgba(30, 143, 255, 0.8);
+}
+
+/* Todos Container */
+.todos-container {
+	width: 100%;
+	max-width: 1000px;
+	height: 70vh;
+	background-color: rgb(240, 240, 240);
+}
+
+.todos {
+	min-width: 100%;
+}
+
+/* Todos Styling */
+.todos-container li {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 100%;
+	font-size: 1.25em;
+	padding: .5em 1em;
+	border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.todos-container button {
+	height: 25px;
+	aspect-ratio: 1;
+	background-color: rgba(255, 0, 0, 0.6);
+	color: white;
+	border: 1px solid white;
+	border-radius: 5px;
+	transition: all .25s;
+}
+
+.todos-container button:hover {
+	background-color: red;
+}
+
+.todos-container i {
+	pointer-events: none;
+}
