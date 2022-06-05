@@ -1,0 +1,108 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-family: sans-serif;
+	height: 100vh;
+	background-color: dodgerblue;
+}
+
+/* Search Section */
+
+.form {
+	display: flex;
+	background-color: white;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	padding: 1.5em 3em;
+	margin-bottom: 50px;
+	border-radius: 6px;
+}
+
+.searchBar {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 10px;
+	min-width: 300px;
+	border: 2px solid dodgerblue;
+	outline: none;
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+
+.submitBtn {
+	font-size: 1.25em;
+	font-weight: bold;
+	padding: 10px 20px;
+	border: 2px solid dodgerblue;
+	border-left: none;
+	background-color: dodgerblue;
+	color: white;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
+	transition: all .1s;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .1);
+}
+
+.submitBtn:hover {
+	background-color: rgb(71, 163, 255);
+}
+
+/* User Profile Section */
+.profile {
+	display: none;
+	padding: 3em;
+	background-color: white;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
+	max-width: 1000px;
+}
+
+.card {
+	display: flex;
+}
+
+.profile img {
+	max-width: 200px;
+	border-radius: 50%;
+	margin-right: 50px;
+}
+
+
+.profile .card div {
+	border-left: 2px solid dodgerblue;
+	padding-left: 1em;
+}
+
+.profile p {
+	margin: 1em 0;
+}
+
+.profile ul {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.profile li {
+	list-style: none;
+	padding: 10px;
+	background-color: dodgerblue;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+	white-space: nowrap;
+	margin: 10px;
+}
+
+.profile a {
+	text-decoration: none;
+	color: white;
+}
