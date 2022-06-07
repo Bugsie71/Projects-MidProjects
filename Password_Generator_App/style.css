@@ -108,4 +108,13 @@ body {
 	margin-top: 15px;
 	border-radius: 5px;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+	transition: background-color ease .2s;
+}
+
+.submitBtn:hover {
+	background-color: rgba(30, 143, 255, 0.9);
+}
+
+.submitBtn:active {
+	outline: 1px solid black;
 }
