@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/038ecc6ac9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="password">
+				<span class="passwordText"></span>
+        <button class="copy">
+					<i class="fa-solid fa-copy"></i>
+				</button>
+      </div>
+      <form>
+        <ul class="conditions">
+          <li>
+            <label for="length">Password Length</label>
+            <input id="length" type="number" value="6" min="6" max="30" />
+          </li>
+          <li>
+            <label for="lowercase">Contains Lowercase</label>
+            <input id="lowercase" type="checkbox" />
+          </li>
+          <li>
+            <label for="uppercase">Contains Uppercase</label>
+            <input id="uppercase" type="checkbox" />
+          </li>
+          <li>
+            <label for="number">Contains Numbers</label>
+            <input id="number" type="checkbox" />
+          </li>
+          <li>
+            <label for="symbol">Contains Symbols</label>
+            <input id="symbol" type="checkbox" />
+          </li>
+        </ul>
+        <button class="submitBtn" type="submit">Generate Password</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
