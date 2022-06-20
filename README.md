@@ -5,3 +5,4 @@
 3. Github App
 4. Password Generator App
 5. Note App
+6. Sequence Game
