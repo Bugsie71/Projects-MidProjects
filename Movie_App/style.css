@@ -1,0 +1,97 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	font-family: sans-serif;
+	max-height: 100vh;
+}
+
+.searchForm {
+	display: flex;
+	justify-content: end;
+	background-color: dodgerblue;
+}
+
+.search {
+	font-size: 1.1em;
+	border-radius: 5px;
+	border: none;
+	padding: 5px 10px;
+	margin: 20px 50px;
+}
+
+.moviesContainer {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	max-width: 1500px;
+}
+
+/* Movie Cards */
+.movie {
+	background-color: black;
+	color: white;
+	width: 325px;
+	padding: 10px;
+	margin: 10px 5px;
+}
+
+.poster {
+	width: 100%;
+}
+
+.top {
+	position: relative;
+	overflow: hidden;
+}
+
+.top p {
+	position: absolute;
+	font-size: 1.1em;
+	background-color: rgba(255, 255, 255, 0.8);
+	color: black;
+	max-height: 100%;
+	overflow: auto;
+	transition: transform .2s ease-in;
+	transform: translateY(100%);
+	bottom: 0;
+	padding: 10px;
+}
+
+.top:hover p {
+	transform: translateY(0%);
+}
+
+.bottom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 52px;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.bottom p {
+	font-weight: bold;
+	color: black;
+	border-radius: 3px;
+	margin-left: 10px;
+	padding: 5px;
+}
+
+.bottom .green {
+	background-color: greenyellow;
+}
+
+.bottom .yellow {
+	background-color: yellow;
+}
+
+.bottom .red {
+	background-color: red;
+}
