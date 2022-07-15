@@ -7,3 +7,4 @@
 5. Note App
 6. Sequence Game
 7. Movie App
+8. Canvas Fun
